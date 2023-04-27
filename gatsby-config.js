@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Vhealth - Open source gatsby template`,
-    description: `Free website template for a health care startup.`,
+    title: `Vida Plena HealthTech`,
+    description: ``,
     author: `Shantanu Deshmukj`,
   },
   plugins: [

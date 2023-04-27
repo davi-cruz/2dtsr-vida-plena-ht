@@ -50,9 +50,8 @@ const Header = ({ companyName }: Props) => {
 
   const navLinks = [
     { displayText: "Home", link: "#" },
-    { displayText: "Services", link: "#services" },
+    { displayText: "Serviços", link: "#servicos" },
     { displayText: "Apps", link: "#apps" },
-    { displayText: "Testimonials", link: "#testimonials" },
     { displayText: "Blog", link: "#blog" },
   ]
 
@@ -76,7 +75,7 @@ const Header = ({ companyName }: Props) => {
             color="inherit"
             className={classes.toolbarTitle}
           >
-            vHealth
+            Vida Plena HealthTech
           </Typography>
 
           <Hidden xsDown>
@@ -115,7 +114,7 @@ Header.propTypes = {
 }
 
 Header.defaultProps = {
-  companyName: `vHealth`,
+  companyName: `Vida Plena HealthTech`,
 }
 
 export default Header

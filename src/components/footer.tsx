@@ -69,7 +69,7 @@ const Footer = () => {
               accessible on mobile and online for everyone
             </Typography>
             <Typography variant="body2" color="inherit">
-              ©vHealth PTY LTD 2020. All rights reserved
+              ©Vida Plena HealthTech 2023. Todos os direitos reservados
             </Typography>
           </Grid>
 
@@ -112,24 +112,10 @@ const Footer = () => {
           alignItems="center"
         >
           <Typography variant="body2" color="inherit">
-            Created by{" "}
-            <a
-              href="https://shantanudeshmukh.com/"
-              target="_blank"
-              style={{ color: "#FFF" }}
-            >
-              Shantanu Deshmukh
-            </a>
+            Criado por Davi Cruz e Marcus Orsolin
           </Typography>
           <Typography variant="body2" color="inherit">
-            Designed by
-            <a
-              href="https://dribbble.com/slabdsgn"
-              target="_blank"
-              style={{ color: "#FFF", margin: 5 }}
-            >
-              SLAB Design Studio
-            </a>
+            FIAP 2DTSR
           </Typography>
         </Grid>
         <FabDownload />

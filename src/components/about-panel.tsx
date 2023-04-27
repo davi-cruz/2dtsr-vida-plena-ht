@@ -21,7 +21,7 @@ const AboutPanel = () => {
         >
           <div style={{ width: "100%" }}>
             <Image
-              alt="Virtual Healthcare for you"
+              alt="Todo cuidado que você precisa na palma da sua mão"
               filename="about-illustration.png"
             />
           </div>

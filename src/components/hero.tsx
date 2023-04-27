@@ -19,15 +19,15 @@ const Hero = () => {
         style={{ paddingLeft: 40, paddingRight: 40 }}
       >
         <Typography variant="h4" color="inherit" style={{ marginBottom: 20 }}>
-          Virtual Healthcare for you
+        Todo cuidado que você precisa na palma da sua mão
         </Typography>
 
         <Typography variant="subtitle1" style={{ marginBottom: 30 }}>
-          We provide progressive, and affordable healthcare, accessible on
+          Conosco você poderá ter o controle total de sua rotina, We provide progressive, and affordable healthcare, accessible on
           mobile and online for everyone
         </Typography>
         <Button variant="contained" color="primary" size="large">
-          Consult Today
+          Confira já
         </Button>
       </Grid>
       <Hidden xsDown>
