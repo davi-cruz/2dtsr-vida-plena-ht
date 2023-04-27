@@ -34,10 +34,10 @@
   ],
   "license": "0BSD",
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
+    "build": "export SET NODE_OPTIONS=--openssl-legacy-provider && gatsby build",
+    "develop": "export SET NODE_OPTIONS=--openssl-legacy-provider && gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "start": "npm run develop",
+    "start": "export SET NODE_OPTIONS=--openssl-legacy-provider && npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "serve-prod": "gatsby build && gatsby serve",
