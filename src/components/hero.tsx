@@ -23,11 +23,10 @@ const Hero = () => {
         </Typography>
 
         <Typography variant="subtitle1" style={{ marginBottom: 30 }}>
-          Conosco você poderá ter o controle total de sua rotina, We provide progressive, and affordable healthcare, accessible on
-          mobile and online for everyone
+          Conosco você poderá ter o controle total de sua rotina, medicações, alimentação e muito mais e aproveitar plenamente a vida
         </Typography>
         <Button variant="contained" color="primary" size="large">
-          Confira já
+          Saiba como
         </Button>
       </Grid>
       <Hidden xsDown>

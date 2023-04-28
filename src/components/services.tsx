@@ -10,43 +10,43 @@ const Services = () => {
     {
       id: 1,
       image: "search-doctor-icon.png",
-      title: "Search Doctor",
+      title: "Serviços de Saúde",
       description:
-        "Choose your doctor from thousands of specialist, general, and trusted hospitals.",
+        "Busque por médicos, nutricionistas, educadores físicos, cuidadores e acompanhantes em um único lugar.",
     },
     {
       id: 2,
       image: "online-pharmacy-icon.png",
-      title: "Online Pharmacy",
+      title: "Controle de Medicamentos",
       description:
-        "Buy your medicines with our mobile application with a simple delivery system.",
+        "Nunca mais se esqueça, perca o horário ou se confunda com a sua medicação, tudo isso de forma simples e intuitiva.",
     },
     {
       id: 3,
       image: "consultation-icon.png",
-      title: "Consultation",
+      title: "Todos os seus dados em um só lugar",
       description:
-        "Free consultation with our trusted doctors and get the best recommendations.",
+        "Acesse suas informações de saúde de diversos hospitais, planos de saúde e laboratórios de forma simples e rápida.",
     },
     {
       id: 4,
       image: "details-info-icon.png",
-      title: "Detail Info",
+      title: "Acompanhamento contínuo",
       description:
-        "Free consultation with our trusted doctors and get the best recommendations.",
+        "Compartilhe com sua equipe médica e familiares o seu histórico de saúde e tenha um acompanhamento mais efetivo e seguro.",
     },
     {
       id: 5,
       image: "emergency-care-icon.png",
-      title: "Emergency Care",
+      title: "Atendimento de emergencia",
       description:
-        "You can get 24/7 urgent care for yourself or your children and your lovely family.",
+        "Acesse rapidamente os serviços de emergência mais próximos de você, com apenas um clique.",
     },
     {
       id: 6,
       image: "tracking-icon.png",
-      title: "Tracking",
-      description: "Track and save your medical history and health data.",
+      title: "Dieta e Exercícios",
+      description: "Acompanhe seus hábitos alimentares e de exercícios físicos e receba dicas personalizadas para melhorar sua saúde.",
     },
   ]
 
@@ -68,13 +68,10 @@ const Services = () => {
         justify="center"
         alignItems="center"
       >
-        <Typography variant="h5">Our Services</Typography>
+        <Typography variant="h5">Funcionalidades</Typography>
         <Bar />
         <Typography variant="subtitle1" style={{ margin: 30 }}>
-          We provide to you the best choices for you. Adjust it to your health
-          needs and make sure your undergo treatment with our highly qualified
-          doctors you can consult with us which type of service is suitable for
-          your health
+          Todas as ferramentas que você precisa ou já utiliza em um único app, trazendo comodidade e integração, além de benefícios exclusivos.
         </Typography>
       </Grid>
 
@@ -86,7 +83,7 @@ const Services = () => {
 
       <Grid item xs={12}>
         <Button variant="outlined" color="primary" size="large">
-          Learn More
+          Saiba mais
         </Button>
       </Grid>
     </Grid>
