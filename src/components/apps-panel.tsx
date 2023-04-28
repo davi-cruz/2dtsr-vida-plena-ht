@@ -2,6 +2,7 @@ import React from "react"
 import Grid from "@material-ui/core/Grid"
 import Typography from "@material-ui/core/Typography"
 import Button from "@material-ui/core/Button"
+import AccessTime from "@material-ui/icons/AccessTime"
 import ArrowDownwardIcon from "@material-ui/icons/ArrowDownward"
 import Image from "./image"
 import Hidden from "@material-ui/core/Hidden"
@@ -21,24 +22,25 @@ const AppsPanel = () => {
         style={{ paddingLeft: 40, paddingRight: 40 }}
       >
         <Typography variant="h4" color="inherit">
-          Download our mobile apps
+          Baixe nosso app
         </Typography>
         <Bar />
         <Typography
           variant="subtitle1"
           style={{ marginBottom: 30, marginTop: 20 }}
         >
-          Our dedicated patient engagement app and web portal allow you to
-          access information instantaneously (no tedious form, long calls, or
-          administrative hassle) and securely
+          Em breve nosso app estará disponível nas principais lojas de aplicativos
+          para Android e iOS
         </Typography>
+
+
         <Button
-          variant="outlined"
-          color="primary"
+          variant="contained"
+          color="secondary"
           size="large"
-          endIcon={<ArrowDownwardIcon />}
+          endIcon={<AccessTime />}
         >
-          Download
+          Me avise quando estiver disponível
         </Button>
       </Grid>
 

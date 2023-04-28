@@ -50,9 +50,8 @@ const Header = ({ companyName }: Props) => {
 
   const navLinks = [
     { displayText: "Home", link: "#" },
-    { displayText: "Serviços", link: "#servicos" },
-    { displayText: "Apps", link: "#apps" },
-    { displayText: "Blog", link: "#blog" },
+    { displayText: "Funcionalidades", link: "#funcionalidades" },
+    { displayText: "App", link: "#app" },
   ]
 
   return (

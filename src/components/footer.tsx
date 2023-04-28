@@ -4,38 +4,28 @@ import Typography from "@material-ui/core/Typography"
 import Box from "@material-ui/core/Box"
 import Hidden from "@material-ui/core/Hidden"
 import Link from "@material-ui/core/Link"
-import FabDownload from "./fab-download"
+import Image from "./image"
 
 const Footer = () => {
   const footerLinks = [
     {
-      title: "Company",
+      title: "Empresa",
       items: [
-        { displayText: "About", url: "" },
+        { displayText: "Sobre", url: "" },
         {
-          displayText: "Testimonials",
+          displayText: "Depoimentos",
           url: "",
         },
-        { displayText: "Find a Doctor", url: "" },
         { displayText: "Apps", url: "" },
       ],
     },
     {
-      title: "Region",
+      title: "Ajuda",
       items: [
-        { displayText: "India", url: "" },
-        { displayText: "Indonesia", url: "" },
-        { displayText: "Singapore", url: "" },
-        { displayText: "Canada", url: "" },
-      ],
-    },
-    {
-      title: "Help",
-      items: [
-        { displayText: "Help Center", url: "" },
-        { displayText: "Contact Support", url: "" },
-        { displayText: "Instructions", url: "" },
-        { displayText: "How it works", url: "" },
+        { displayText: "Como funciona", url: "" },
+        { displayText: "Instruções", url: "" },
+        { displayText: "Contatar suporte", url: "" },
+        
       ],
     },
   ]
@@ -62,11 +52,14 @@ const Footer = () => {
             style={{ padding: 10 }}
           >
             <Typography variant="h4" color="inherit">
-              vHealth
+              Vida Plena HealthTech
             </Typography>
+            <Image
+              alt="Vida Plena HealthTech Logo"
+              filename="LogoSmall.png"
+            />
             <Typography variant="body2" color="inherit">
-              vHealth provides progressive, and affordable healthcare,
-              accessible on mobile and online for everyone
+              Todo vuidado que você precisa na palma da sua mão
             </Typography>
             <Typography variant="body2" color="inherit">
               ©Vida Plena HealthTech 2023. Todos os direitos reservados
@@ -117,8 +110,7 @@ const Footer = () => {
           <Typography variant="body2" color="inherit">
             FIAP 2DTSR
           </Typography>
-        </Grid>
-        <FabDownload />
+        </Grid>        
       </Box>
     </React.Fragment>
   )

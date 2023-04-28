@@ -38,19 +38,18 @@ const AboutPanel = () => {
         style={{ paddingLeft: 40, paddingRight: 40 }}
       >
         <Typography variant="h4" color="inherit">
-          Leading healthcare providers
+          Parceria com os principais planos de saúde
         </Typography>
         <Bar />
         <Typography
           variant="subtitle1"
           style={{ marginBottom: 30, marginTop: 20 }}
         >
-          We provide progressive, and affordable healthcare, accessible on
-          mobile and online for everyone. To us, it’s not just work. We take
-          pride in the solutions we deliver
+          Fornecemos uma plataforma integrada aos principais operadores de saúde do país,
+          onde o cuidado com sua saúde é convertido em descontos e benefícios.
         </Typography>
         <Button variant="outlined" color="primary" size="large">
-          Learn More
+          Saiba mais
         </Button>
       </Grid>
     </Grid>
