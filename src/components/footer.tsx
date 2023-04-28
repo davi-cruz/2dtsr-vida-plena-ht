@@ -59,7 +59,7 @@ const Footer = () => {
               filename="LogoSmall.png"
             />
             <Typography variant="body2" color="inherit">
-              Todo vuidado que você precisa na palma da sua mão
+              Todo cuidado que você precisa na palma da sua mão
             </Typography>
             <Typography variant="body2" color="inherit">
               ©Vida Plena HealthTech 2023. Todos os direitos reservados
