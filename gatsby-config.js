@@ -5,6 +5,8 @@ module.exports = {
     author: `Davi Cruz e Marcos Orsolin`,
     course: `FIAP - MBA em Data Science`,
     logo: `logo.png`,
+    siteUrl: `https://davi-cruz.github.io`,
+    pathPrefix: `/2dtsr-vida-plena-ht`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
