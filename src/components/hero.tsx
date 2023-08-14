@@ -26,7 +26,7 @@ const Hero = () => {
           Conosco você poderá ter o controle total de sua rotina, medicações,
           alimentação e muito mais e aproveitar plenamente a vida
         </Typography>
-        <Button variant="contained" color="primary" size="large" href="/funcionalidades">
+        <Button variant="contained" color="primary" size="large" href="/2dtsr-vida-plena-ht/funcionalidades">
           Saiba mais
         </Button>
       </Grid>

@@ -48,7 +48,7 @@ const AboutPanel = () => {
           Fornecemos uma plataforma integrada aos principais operadores de saúde do país,
           onde o cuidado com sua saúde é convertido em descontos e benefícios.
         </Typography>
-        <Button variant="outlined" color="primary" size="large" href="/funcionalidades">
+        <Button variant="outlined" color="primary" size="large" href="/2dtsr-vida-plena-ht/funcionalidades">
           Saiba mais
         </Button>
       </Grid>

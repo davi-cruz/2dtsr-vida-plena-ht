@@ -58,8 +58,8 @@ const Header = ({ companyName }: Props) => {
   }
 
   const navLinks = [
-    { displayText: "Home", link: "/" },
-    { displayText: "Funcionalidades", link: "/funcionalidades" },
+    { displayText: "Home", link: "/2dtsr-vida-plena-ht/" },
+    { displayText: "Funcionalidades", link: "/2dtsr-vida-plena-ht/funcionalidades" },
   ]
 
   return (
@@ -77,7 +77,7 @@ const Header = ({ companyName }: Props) => {
               <MenuIcon />
             </IconButton>
           </Hidden>
-          <Link color="inherit" href="/">
+          <Link color="inherit" href="/2dtsr-vida-plena-ht/">
             <Logo className={classes.logo} />
           </Link>
           <Typography
@@ -85,7 +85,7 @@ const Header = ({ companyName }: Props) => {
             color="inherit"
             className={classes.toolbarTitle}
           >
-            <Link color="inherit" href="/">
+            <Link color="inherit" href="/2dtsr-vida-plena-ht/">
               {companyName}
             </Link>
           </Typography>
