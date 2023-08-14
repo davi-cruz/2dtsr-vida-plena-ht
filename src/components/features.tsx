@@ -1,12 +1,11 @@
 import React from "react"
 import Grid from "@material-ui/core/Grid"
 import Typography from "@material-ui/core/Typography"
-import Button from "@material-ui/core/Button"
-import ServiceCard from "./service-card"
+import FeatureCard from "./feature-card"
 import Bar from "./bar"
 
-const Services = () => {
-  let services = [
+const Features = () => {
+  let features = [
     {
       id: 1,
       image: "search-doctor-icon.png",
@@ -75,18 +74,12 @@ const Services = () => {
         </Typography>
       </Grid>
 
-      {services.map(service => (
-        <Grid item xs={12} sm={4} key={service.id}>
-          <ServiceCard service={service} />
+      {features.map(feature => (
+        <Grid item xs={12} sm={4} key={feature.id}>
+          <FeatureCard feature={feature} />
         </Grid>
       ))}
-
-      <Grid item xs={12}>
-        <Button variant="outlined" color="primary" size="large">
-          Saiba mais
-        </Button>
-      </Grid>
     </Grid>
   )
 }
-export default Services
+export default Features

@@ -24,6 +24,7 @@ const Layout = ({ children }: Props) => {
       site {
         siteMetadata {
           title
+          logo
         }
       }
     }
@@ -31,7 +32,7 @@ const Layout = ({ children }: Props) => {
 
   return (
     <React.Fragment>
-      <Header />
+      <Header companyLogo={data.site.siteMetadata.logo} companyName={data.site.siteMetadata.title}/>
       <Box
         style={{
           margin: `0 auto`,

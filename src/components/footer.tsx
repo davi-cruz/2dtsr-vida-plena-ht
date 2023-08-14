@@ -2,33 +2,24 @@ import React from "react"
 import Grid from "@material-ui/core/Grid"
 import Typography from "@material-ui/core/Typography"
 import Box from "@material-ui/core/Box"
-import Hidden from "@material-ui/core/Hidden"
-import Link from "@material-ui/core/Link"
-import Image from "./image"
+import { useStaticQuery, graphql } from "gatsby"
 
 const Footer = () => {
-  const footerLinks = [
-    {
-      title: "Empresa",
-      items: [
-        { displayText: "Sobre", url: "" },
-        {
-          displayText: "Depoimentos",
-          url: "",
-        },
-        { displayText: "Apps", url: "" },
-      ],
-    },
-    {
-      title: "Ajuda",
-      items: [
-        { displayText: "Como funciona", url: "" },
-        { displayText: "Instruções", url: "" },
-        { displayText: "Contatar suporte", url: "" },
-        
-      ],
-    },
-  ]
+  const data = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          title
+          author
+          course
+          description
+        }
+      }
+    }
+  `)
+
+  const today = new Date()
+  const year = today.getFullYear()
 
   return (
     <React.Fragment>
@@ -52,42 +43,16 @@ const Footer = () => {
             style={{ padding: 10 }}
           >
             <Typography variant="h4" color="inherit">
-              Vida Plena HealthTech
-            </Typography>
-            <Image
-              alt="Vida Plena HealthTech Logo"
-              filename="LogoSmall.png"
-            />
-            <Typography variant="body2" color="inherit">
-              Todo cuidado que você precisa na palma da sua mão
+              {data.site.siteMetadata.title}
             </Typography>
             <Typography variant="body2" color="inherit">
-              ©Vida Plena HealthTech 2023. Todos os direitos reservados
+              {data.site.siteMetadata.description}
+            </Typography>
+            <Typography variant="body2" color="inherit">
+              © {data.site.siteMetadata.title} {year}. Todos os direitos
+              reservados
             </Typography>
           </Grid>
-
-          <Hidden xsDown>
-            {footerLinks.map(footerMenu => (
-              <Grid
-                item
-                xs={12}
-                sm={2}
-                container
-                direction="column"
-                justify="space-evenly"
-                key={footerMenu.title}
-              >
-                <Typography variant="subtitle1" color="inherit">
-                  {footerMenu.title}
-                </Typography>
-                {footerMenu.items.map(link => (
-                  <Link color="inherit" variant="body2" key={link.displayText}>
-                    {link.displayText}
-                  </Link>
-                ))}
-              </Grid>
-            ))}
-          </Hidden>
         </Grid>
       </Box>
       <Box className="attribution">
@@ -105,12 +70,12 @@ const Footer = () => {
           alignItems="center"
         >
           <Typography variant="body2" color="inherit">
-            Criado por Davi Cruz e Marcus Orsolin
+            Criado por {data.site.siteMetadata.author}
           </Typography>
           <Typography variant="body2" color="inherit">
-            FIAP 2DTSR
+            {data.site.siteMetadata.course}
           </Typography>
-        </Grid>        
+        </Grid>
       </Box>
     </React.Fragment>
   )

@@ -19,14 +19,15 @@ const Hero = () => {
         style={{ paddingLeft: 40, paddingRight: 40 }}
       >
         <Typography variant="h4" color="inherit" style={{ marginBottom: 20 }}>
-        Todo cuidado que você precisa na palma da sua mão
+          Todo cuidado que você precisa na palma da sua mão
         </Typography>
 
         <Typography variant="subtitle1" style={{ marginBottom: 30 }}>
-          Conosco você poderá ter o controle total de sua rotina, medicações, alimentação e muito mais e aproveitar plenamente a vida
+          Conosco você poderá ter o controle total de sua rotina, medicações,
+          alimentação e muito mais e aproveitar plenamente a vida
         </Typography>
-        <Button variant="contained" color="primary" size="large">
-          Saiba como
+        <Button variant="contained" color="primary" size="large" href="/funcionalidades">
+          Saiba mais
         </Button>
       </Grid>
       <Hidden xsDown>

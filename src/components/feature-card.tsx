@@ -5,30 +5,30 @@ import Typography from "@material-ui/core/Typography"
 import Image from "./image"
 
 interface IProps {
-  service: Service
+  feature: Feature
 }
 
-interface Service {
+interface Feature {
   title: string
   image: string
   description: string
 }
 
-const ServiceCard = ({ service, ...props }: IProps) => {
+const FeatureCard = ({ feature, ...props }: IProps) => {
   return (
     <Card>
       <CardContent style={{ textAlign: "start", minHeight: 200 }}>
         <div style={{ width: 80, padding: 10 }}>
-          <Image alt={service.title} filename={service.image} />
+          <Image alt={feature.title} filename={feature.image} />
         </div>
         <Typography variant="h6" color="inherit">
-          {service.title}
+          {feature.title}
         </Typography>
         <Typography variant="body2" color="textSecondary" component="p">
-          {service.description}
+          {feature.description}
         </Typography>
       </CardContent>
     </Card>
   )
 }
-export default ServiceCard
+export default FeatureCard

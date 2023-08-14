@@ -1,8 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `Vida Plena HealthTech`,
-    description: ``,
-    author: `Shantanu Deshmukj`,
+    title: `Vida Plena Health Tech`,
+    description: `Todo cuidado que você precisa na palma da sua mão`,
+    author: `Davi Cruz e Marcos Orsolin`,
+    course: `FIAP - MBA em Data Science`,
+    logo: `logo.png`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -18,18 +20,15 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Vida Plena Health Tech`,
+        short_name: `VidaPlenaHT`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/favicon.png`, // This path is relative to the root of the site.
+        icon: `src/images/icon.png`,
       },
     },
     `gatsby-plugin-material-ui`,
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
 }

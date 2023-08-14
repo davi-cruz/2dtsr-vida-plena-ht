@@ -4,6 +4,7 @@ import React from "react"
 import AppBar from "@material-ui/core/AppBar"
 import Toolbar from "@material-ui/core/Toolbar"
 import Typography from "@material-ui/core/Typography"
+import Link from "@material-ui/core/Link"
 import Button from "@material-ui/core/Button"
 import { makeStyles } from "@material-ui/core/styles"
 import IconButton from "@material-ui/core/IconButton"
@@ -13,6 +14,7 @@ import Drawer from "@material-ui/core/Drawer"
 import ListItem from "@material-ui/core/ListItem"
 import ListItemText from "@material-ui/core/ListItemText"
 import List from "@material-ui/core/List"
+import Logo from "./logo"
 
 interface Props {
   companyName: string
@@ -28,6 +30,13 @@ const useStyles = makeStyles(theme => ({
   },
   toolbarTitle: {
     flexGrow: 1,
+  },
+  logo: {
+    height: 62,
+    width: 40,
+    marginRight: 10,
+    marginTop: 5,
+    marginBottom: 5,
   },
   drawerList: {
     width: 250,
@@ -49,9 +58,8 @@ const Header = ({ companyName }: Props) => {
   }
 
   const navLinks = [
-    { displayText: "Home", link: "#" },
-    { displayText: "Funcionalidades", link: "#funcionalidades" },
-    { displayText: "App", link: "#app" },
+    { displayText: "Home", link: "/" },
+    { displayText: "Funcionalidades", link: "/funcionalidades" },
   ]
 
   return (
@@ -69,17 +77,22 @@ const Header = ({ companyName }: Props) => {
               <MenuIcon />
             </IconButton>
           </Hidden>
+          <Link color="inherit" href="/">
+            <Logo className={classes.logo} />
+          </Link>
           <Typography
             variant="h6"
             color="inherit"
             className={classes.toolbarTitle}
           >
-            Vida Plena HealthTech
+            <Link color="inherit" href="/">
+              {companyName}
+            </Link>
           </Typography>
 
           <Hidden xsDown>
             {navLinks.map(item => (
-              <Button color="inherit" key={item.displayText}>
+              <Button color="inherit" key={item.displayText} href={item.link}>
                 {item.displayText}
               </Button>
             ))}
@@ -93,7 +106,7 @@ const Header = ({ companyName }: Props) => {
         onEscapeKeyDown={handleDrawerClose}
         onBackdropClick={handleDrawerClose}
         ModalProps={{
-          keepMounted: true, // Better open performance on mobile.
+          keepMounted: true,
         }}
       >
         <List className={classes.drawerList}>
@@ -110,10 +123,12 @@ const Header = ({ companyName }: Props) => {
 
 Header.propTypes = {
   companyName: PropTypes.string,
+  companyLogo: PropTypes.string,
 }
 
 Header.defaultProps = {
-  companyName: `Vida Plena HealthTech`,
+  companyName: `Contoso`,
+  companyLogo: `logo.png`,
 }
 
 export default Header

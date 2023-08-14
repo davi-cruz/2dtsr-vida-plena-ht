@@ -19,7 +19,6 @@ const Bar = () => {
     <Box style={{ width: 80 }}>
       <Divider
         classes={{ root: classes.divider }}
-        // style={{ height: 3, margin: 10, color: "#000" }}
       />
     </Box>
   )
